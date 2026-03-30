@@ -13,7 +13,7 @@ While building a neural network with libraries like TensorFlow and PyTorch can b
 
 **The Data**
 
-To help generalize the network design, I wanted to predict handwritten digits on two different datasets. 1: the Sklearn Digits dataset, which has 1797 8 x 8 images of handwritten numbers. 2: the MNIST Digits dataset, which has 60,000 28 x 28 images of handwritten digits (NOTE: Because the MNIST dataset is so large, I took a slice of 6000 of the digits to reduce the computational load)
+To help generalize the network design, I wanted to predict handwritten digits on two different datasets. 1: the Sklearn Digits dataset, which has 1797 8 x 8 images of handwritten numbers. 2: the MNIST Digits dataset, which has 60,000 28 x 28 images of handwritten digits (NOTE: Because the MNIST dataset is so large, I random took a slice of 10000 of the digits to reduce the computational load)
 
 **Architecture**
 
