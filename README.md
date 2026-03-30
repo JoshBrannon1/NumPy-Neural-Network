@@ -19,7 +19,7 @@ To help generalize the network design, I wanted to predict handwritten digits on
 
 Sklearn: Input → Dense(256) → ReLU → Dense(64) → ReLU → Dense(10) → Softmax
 
-MNIST: Input → Dense(512) → ReLU → Dense(256) → ReLU → Dense(10) → Softmax
+MNIST: Input → Dense(512) → ReLU → Dense(256) → ReLU → Dense(128) → ReLU → Dense(10) → Softmax
 
 **What I implemented**
 
