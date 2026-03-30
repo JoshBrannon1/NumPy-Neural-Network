@@ -5,7 +5,7 @@ A Python neural network implemented using only NumPy, no ML frameworks
 
 Sklearn Digits (8 x 8) - 98.3% Accuracy
 
-MNIST Digits (28 x 28) - 93.5% Accuracy
+MNIST Digits (28 x 28) - 94.2% Accuracy (on a smaller 10,000 digit subset of the entire set)
 
 **Motivation**
 
@@ -19,7 +19,7 @@ To help generalize the network design, I wanted to predict handwritten digits on
 
 Sklearn: Input → Dense(256) → ReLU → Dense(64) → ReLU → Dense(10) → Softmax
 
-MNIST: Input → Dense(256) → ReLU → Dense(128) → ReLU → Dense(64) → ReLU → Dense(10) → Softmax
+MNIST: Input → Dense(512) → ReLU → Dense(256) → ReLU → Dense(10) → Softmax
 
 **What I implemented**
 
@@ -29,7 +29,7 @@ MNIST: Input → Dense(256) → ReLU → Dense(128) → ReLU → Dense(64) → R
 - Cross entropy loss: A function that measures how close the model's digit predictions are to the actual digit
 - One-hot-encode: Converts integer labels into one-hot vectors (vectors of length 10 with 9 zeros and a single 1 placed at the index corresponding to the digit in question)
 - Backwards pass: Relies on gradient descent and the chain rule from calculus to find where the cross entropy loss is the lowest. Works backwards through the network applying derivatives at each step to tweak the weights in each layer to lower the loss, and get more accurate predictions.
-- Training loop: Ties everything together to train the model. Trains data in batches, propagates through the network, makes predictions, and applies backpropagation to improve the accuracy of the model. \
+- Training loop: Ties everything together to train the model. Trains data in batches, propagates through the network, makes predictions, and applies backpropagation to improve the accuracy of the model.
 - Dynamic learning rate: For the MNIST dataset, a changing learning rate can improve accuracy. The learning rate falls by 2% for each epoch so that big nudges happen in the beginning to push the model towards higher accuracy, and smaller nudges happen later on to fine tune the accuracy.
 - Matplot visualization: Side by side graphs of loss over epochs and accuracy over epochs to visualize the performance of the models.
 
@@ -47,7 +47,7 @@ MNIST Digits:
 3) Run
 
 **Acknowledgments**
-Built with reference to the tutorial below, further extended by adjusting to be compatible with MNIST digits, altered network architecture, added an additional hidden layer for MNIST, implemented dynamic learning rate, implemented data visualization.
+Built with reference to the tutorial below, further extended by adjusting to be compatible with MNIST digits, altered network architecture, experimented with additional hidden layers, implemented dynamic learning rate, implemented data visualization.
 https://letsdatascience.com/blog/build-a-neural-network-from-scratch-in-python
 
 
