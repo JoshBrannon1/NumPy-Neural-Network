@@ -47,7 +47,7 @@ MNIST Digits:
 3) Run
 
 **Acknowledgments**
-Built with reference to the cited tutorial, further extended by adjusting to be compatible with MNIST digits, altered network architecture, added an additional hidden layer for MNIST, implemented dynamic learning rate, implemented data visualization.
+Built with reference to the tutorial below, further extended by adjusting to be compatible with MNIST digits, altered network architecture, added an additional hidden layer for MNIST, implemented dynamic learning rate, implemented data visualization.
 https://letsdatascience.com/blog/build-a-neural-network-from-scratch-in-python
 
 
